@@ -17,17 +17,31 @@ header {
 }
 a {
   cursor: pointer;
-  color: #160700;
+  color: #ebdcbc;
   text-decoration: none;
 }
 .btn-pidelo {
   font-family: "Trading post NF";
-  background-color: #ea9310;
+  background-color: #b52f22;
+  color: floralwhite;
   border-radius: 15px;
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
   border: none;
+}
+.btn-pidelo2 {
+  font-family: "Trading post NF";
+  color: #b52f22;
+  background-color: #ebdcbc;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+.btn-pidelo2 a {
+  color: #b52f22;
 }
 .btn-pidelo:hover {
   background-color: #e9b05c;
@@ -44,7 +58,7 @@ a {
   margin: 0 auto;
 }
 .nav-link {
-  color: #fff;
+  color: #8e412f;
   text-decoration: none;
 }
 #iconoHeader {
@@ -90,6 +104,13 @@ i.fab.fa-facebook.text {
   font-size: 18px;
   color: #b32e20;
 }
+.textosub3 {
+  font-family: "Raleway";
+  padding: 2px 10px 2px 10px;
+  font-size: 18px;
+  font-weight: 800 !important;
+  color: #b32e20;
+}
 .textosub2 {
   font-family: "Raleway";
   font-size: 18px;
@@ -105,6 +126,21 @@ i.fab.fa-facebook.text {
 }
 .atencion {
   padding: 5px;
+  text-align: center;
+}
+.imgcalendario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendario {
+  padding: 30px;
+  width: 150px;
+  height: 150px;
+}
+.horario {
+  width: 250px;
+  height: 80px;
 }
 .subtitulo {
   font-family: "Trading post NF";
@@ -116,17 +152,18 @@ i.fab.fa-facebook.text {
   text-align: center;
 }
 .nav-menu {
-  font-family: "Raleway";
+  font-family: "Trading post NF";
   display: flex;
   margin-right: 30px;
   list-style: none;
+  color: #8e412f;
 }
 .nav-menu-item {
   font-size: 17px;
   font-weight: 600;
   margin: 5px 10px;
   line-height: 60px;
-  text-shadow: 0 0 12px #000, 0 0 15px #daa439;
+  text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
 }
 .nav-menu-link {
   padding: 8px 10px;
@@ -706,6 +743,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 20px;
   }
   .textocarta1 {
     display: flex;
