@@ -1,2 +1,2 @@
-# Tradiciones-Arequipe-as
+# Tradiciones-Arequipeñas
 Web del restaurant Tradiciones Arequipeñas
