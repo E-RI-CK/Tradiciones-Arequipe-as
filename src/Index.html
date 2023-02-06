@@ -12,8 +12,6 @@
   <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
   <script src="https://example.com/fontawesome/v6.1.1/js/all.js" data-auto-a11y="true"></script>
   <script src="https://example.com/fontawesome/v6.1.1/js/all.js" data-auto-replace-svg="nest"></script>
-
-
 </head>
 
 <body>
@@ -33,7 +31,7 @@
         </li>
         <li class="nav-menu-item">
           <button class="btn-pidelo"> <i class="fa fa-whatsapp"></i><a
-              href="https://pollerialosnieto.whataform.com/f/21480c2b4b072b"> PIDELO AQUI</a> </button>
+              href="https://pollerialosnieto.whataform.com/f/21480c2b4b072b"> PÍDELO AQUI</a> </button>
         </li>
       </ul>
     </nav>
@@ -50,15 +48,14 @@
     </div>
     <div class="btn-slider">
       <button class="btn-pidelo"> <i class="fa fa-whatsapp"></i> <a
-          href="https://pollerialosnieto.whataform.com/f/21480c2b4b072b"> PIDELO AQUI</a></button>
+          href="https://pollerialosnieto.whataform.com/f/21480c2b4b072b"> PÍDELO AQUI</a></button>
     </div>
   </div>
 
   <section id="carta1">
     <div class="seccarta">
       <div class="textocarta">
-        <h2 class="studio2">NUESTROS</h2>
-        <h2 class="studio2">PLATOS</h2>
+        <p class="studio2">NUESTROS<br>PLATOS</p>
       </div>
       <div class="imgdiv">
         <img class="imgcarta" src="./img/rocoto.png" />
@@ -217,30 +214,35 @@
           <img class="imgcarta" src="./img/encuentranos.png" />
         </div>
       </div>
-      <div class="imgdiv">
-        <h2 class="textosub">Urb. Adepa 0-3, J.L. Bustamante y </h2>
-        <h2 class="textosub">Rivero – Arequipa, Perú </h2>
-        <h2 class="textosub">(En la misma Av. Dolores) </h2>
-        <hr style="width: 250px; background:#d85640; margin: 20px; height: 5px; text-align: right;" /> .
+      <div class="find-us">
+        <h2 class="textosub text-bold">Av. Dolores 111 - José Luis</h2>
+        <h2 class="textosub">Bustamante y Rivero,</h2>
+        <h2 class="textosub">Arequipa</h2>
+        <hr style="width: 350px; background:#d85640; margin: 0px; height: 5px; text-align: center;" /> .
       </div>
     </div>
-    <div>
-      <img class="imgubi" src="./img/ubicacion.png" />
+    <div id="restaurant-location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426.19850778032907!2d-71.52656707929805!3d-16.418057471014077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424ae2676abe05%3A0x96b0a87bd79ce844!2sTradici%C3%B3n%20Arequipe%C3%B1a!5e0!3m2!1ses!2spe!4v1675443062835!5m2!1ses!2spe"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div>
+    <div class="location-line">
+      <figure>
+        <img src="img/Mesa de trabajo 32.png" alt="Linea de ubicación">
+      </figure>
+    </div>
+    <div id="opening-hours">
       <div class="imgcalendario">
         <img class="calendario" src="./img/calendario.png" />
       </div>
-      <div class="imgcalendario">
+      <div class="imghorario">
         <img class="horario" src="./img/horario.png" />
       </div>
       <div class="atencion">
-        <h2 class="textosub">Lunes a sábado ( 10:00 am a 6:00 pm), </h2>
-
-        <h2 class="textosub3">excepto miércoles </h2>
-      </div>
-      <div class="atencion">
-        <h2 class="textosub">Los domingos (9:00 am - 6:00 pm) </h2>
+        <p class="textosub">Lunes a sábado ( 10:00 am a 6:00 pm), </p>
+        <p class="textosub3">excepto miércoles </p>
+        <p class="textosub">Los domingos (9:00 am - 6:00 pm) </p>
       </div>
     </div>
   </section>
@@ -248,12 +250,14 @@
   <section id="contacto">
     <div class="seccarta3">
       <div class="textocarta">
-        <div>
-          <div class="divtextual">
-            <p class="studio" style="color:#e3d7b2">Siguenos en:</p>
-          </div>
-          <h2 class="textosub2"><i class="fab fa-instagram-square text"></i> @tradicionarequipena</h2>
-          <h2 class="textosub2"><i class="fab fa-facebook text"></i> @latradi</h2>
+        <div class="divtextual">
+          <p class="studio" style="color:#e3d7b2">Siguenos en:</p>
+        </div>
+        <div class="site-links">
+          <a class="textosub2" href="https://www.instagram.com/tradicionarequipena/" target="_blank"><i
+              class="fab fa-instagram-square text"></i>@tradicionarequipena</a>
+          <a class="textosub2" href="https://www.facebook.com/latradi" target="_blank"><i
+              class="fab fa-facebook text"></i> @latradi</a>
         </div>
       </div>
       <div class="imgdiv">
@@ -286,7 +290,7 @@
     </div>
   </section>
 
-  <footer>
+  <!-- <footer>
     <div class="footercontent">
       <div>
         <img src="./img/msg-footer.png" />
@@ -318,7 +322,7 @@
       <h6 class="copy">© 2020 <a href="https://www.libertemarketing.com/">Agencia de Marketing Liberte.</a> Todos los
         derechos reservados.</h6>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="main.js"></script>
   <!-- Meta Pixel Code -->

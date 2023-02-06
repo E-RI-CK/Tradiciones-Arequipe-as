@@ -1,13 +1,74 @@
-* {
+/**********************Andro's changes**************************/
+
+@font-face {
+  font-family: 'Bartender';
+  src: url('fonts/Bartender/Bartender.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+/*****************************/
+:root {
+  --font-principal: "Bartender";
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+#restaurant-location {
+  border: 3px solid #b32e20;
+  border-radius: 2% 2% 1.5% 1.5%;
+  overflow: hidden;
+  width: 70vw;
+  height: 70vh;
+  margin-top: 3rem;
+}
+
+#restaurant-location iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#opening-hours {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin-top: 80px;
+  line-height: 0%;
+  width: 100vw;
+  /* background: red; */
+}
+
+/**********************************************/
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 /* solo para ver el texto hasta que lo acomode */
 /*Estilo para el header de todas las páginas */
 header {
+  background: rgba(233, 215, 177, 0.7);
   padding-top: 10px;
-  background: #e5d7b1ac;
+  /* background: #e5d7b1ac; */
   position: fixed;
   width: 100%;
   height: 100px;
@@ -17,16 +78,16 @@ header {
 }
 a {
   cursor: pointer;
-  color: #ebdcbc;
+  color: #fff;
   text-decoration: none;
 }
 .btn-pidelo {
-  font-family: "Trading post NF";
+  font-family: var(--font-principal);
   background-color: #b52f22;
-  color: floralwhite;
-  border-radius: 15px;
-  padding: 10px;
-  font-size: 18px;
+  color: #fff;
+  border-radius: 45px 45px 45px 45px;
+  padding: 4px 20px;
+  font-size: 2.3vw;
   font-weight: 500;
   border: none;
 }
@@ -50,12 +111,20 @@ a {
   display: flex;
   margin: 30px 10px;
 }
+.find-us {
+  font-size: 1vw;
+  font-family: var(--font-principal);
+  font-weight: 200;
+  text-align: right;
+}
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 992px;
+  width: auto;
+  /* max-width: 992px; */
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .nav-link {
   color: #8e412f;
@@ -73,11 +142,11 @@ a {
   color: #160700;
 }
 .studio2 {
-  font-family: "Trading post NF";
-  font-weight: 800;
-  font-size: 50px;
+  font-family: var(--font-principal);
+  font-weight: 300;
+  font-size: 8rem;
   padding: 20px;
-  color: #ab2016;
+  color: #ecdfb8;
   z-index: 100;
 }
 #contacto i {
@@ -95,27 +164,32 @@ i.fab.fa-instagram-square.text,
 i.fab.fa-facebook.text {
   color: #b22d20;
 }
-.divtextual {
-  display: flex;
-}
+
 .textosub {
   font-family: "Raleway";
-  padding: 2px 10px 2px 10px;
-  font-size: 18px;
+  /* padding: 2px 10px 2px 10px; */
+  font-size: 30px;
   color: #b32e20;
+  font-weight: 200;
+  line-height: 0.3;
 }
+
+.text-bold{
+  font-weight: bold;
+}
+
 .textosub3 {
   font-family: "Raleway";
-  padding: 2px 10px 2px 10px;
+  /* padding: 2px 10px 2px 10px; */
   font-size: 18px;
-  font-weight: 800 !important;
+  font-weight: 900;
   color: #b32e20;
 }
 .textosub2 {
   font-family: "Raleway";
-  font-size: 18px;
+  font-size: 25px;
   color: #f0e3bf;
-  padding: 2px 10px 2px 10px;
+  /* padding: 2px 10px 2px 10px; */
 }
 .enlaces {
   display: flex;
@@ -124,26 +198,32 @@ i.fab.fa-facebook.text {
   align-items: center;
   padding: 20px;
 }
-.atencion {
+.atencion p {
   padding: 5px;
   text-align: center;
+  font-size: 2vw;
 }
 .imgcalendario {
+  display: block;
+  width: 100%;
+  background-image: url(img/rocotos.png);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .calendario {
-  padding: 30px;
-  width: 150px;
-  height: 150px;
+  height: auto;
+  width: 25vw;
 }
 .horario {
-  width: 250px;
-  height: 80px;
+  display: flex;
+  width: 40vw;
+  height: auto;
+  margin: 0 auto;
 }
 .subtitulo {
-  font-family: "Trading post NF";
+  font-family: var(--font-principal);
   font-weight: 400;
   font-size: 40px;
   padding-left: 20px;
@@ -152,15 +232,18 @@ i.fab.fa-facebook.text {
   text-align: center;
 }
 .nav-menu {
-  font-family: "Trading post NF";
+  font-family: var(--font-principal);
+  position: static;
   display: flex;
-  margin-right: 30px;
+  justify-content: space-evenly;
+  /* margin-right: 2rem; */
+
   list-style: none;
   color: #8e412f;
 }
 .nav-menu-item {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 2.3vw;
+  /* font-weight: 600; */
   margin: 5px 10px;
   line-height: 60px;
   text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
@@ -250,12 +333,15 @@ i.fab.fa-facebook.text {
 /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
 
 .back-principal {
-  padding: 30px;
+  /* padding: 30px;
   padding-top: 60px;
   padding-bottom: 40px !important;
-  margin: -20px 0px 0px 0px;
-  background-image: url(img/fondo-primero.png);
+  margin: -20px 0px 0px 0px; */
+  /* background-image: url('img/fondo-primero.png');
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
 }
 .secciones {
   display: inline-block;
@@ -276,8 +362,15 @@ footer {
   display: inline-flex;
   background-image: url(img/fondo-primero.jpg);
   justify-content: center;
-  background-size: 100vw 600px;
-  min-height: 600px;
+  /* background-size: 100vw 600px; */
+  /***********Andro's Changes**********/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  /************************************/
+  /* min-height: 600px; */
   color: #fff;
   width: 100%;
   flex-direction: column;
@@ -323,7 +416,7 @@ footer {
   display: flex;
   background-image: url(img/fondo-especiales.jpg);
   justify-content: center;
-  background-size: 1600px 900px;
+  background-size: cover;
   min-height: 500px;
   color: #fff;
   width: 100%;
@@ -351,22 +444,25 @@ footer {
   align-content: center;
 }
 
-#carta,
 #carta1 {
-  background-image: url(img/fondo-carta.jpg);
+  background-image: url(img/fondo-carta-test-1.jpg);
+  background-size: contain;
   justify-content: center;
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
   align-items: center;
   align-content: center;
+  margin: 0 auto;
+  padding: 0;
 }
 #ubicacion {
-  background-color: #eee2c0;
+  background-image: url(img/background-test.jpg);
   justify-content: center;
-  padding: 30px 30px;
+  /* padding: 30px 30px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 2rem;
 }
 #contacto {
   background: #b12d20;
@@ -692,8 +788,9 @@ footer {
 }
 .fonttext {
   background-color: #eadeb9;
-  font-family: "Trading post NF";
-  font-weight: 800;
+  font-family: var(--font-principal);
+  /* font-weight: 800; */
+  font-weight: 300;
   color: #ab2016;
   z-index: 100;
   border-radius: 25px;
@@ -719,7 +816,8 @@ footer {
 .textocarta {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin-bottom: 3rem;
+  /* align-items: flex-start; */
 }
 .textocarta1 {
   display: flex;
@@ -730,11 +828,16 @@ footer {
   text-align: right;
 }
 
+.site-links {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
   /*Estilo para el header de todas las páginas en dispositivos móviles*/
-  body {
+  /* body {
     padding-top: 50px;
-  }
+  } */
   #slider li .content_slider {
     padding: 0px 0px;
     width: 100vw;
@@ -759,7 +862,7 @@ footer {
     height: 300px;
   }
   header {
-    height: 100px;
+    height: 10vh;
     width: 100%;
   }
   #especiales {
@@ -824,11 +927,10 @@ footer {
   }
   .seccarta3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   #ubicacion {
     display: flex;
@@ -1147,4 +1249,57 @@ footer {
   src: url("./fonts/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+/*************Media Queries*************/
+
+@media screen and (max-width: 1024px) {
+  #restaurant-location {
+    width: 80vw;
+    height: 50vh;
+  }
+  #opening-hours {
+    width: auto;
+    min-height: 50vh;
+  }
+  #ubicacion {
+    background-image: url(img/rocotos.png), url(img/background-test.jpg);
+    background-size: 200%;
+  }
+  .atencion p {
+    padding: 5px;
+    text-align: center;
+    font-size: 4vw;
+  } 
+  .cabecera {
+    background-position: 37% 30%;
+  }
+
+  .imgcalendario {
+    background-image: none;
+  }
+  .imgcalendario .horario {
+    margin-top: 0 auto;
+    height: auto;
+    width: 50vw;
+  }
+  .location-line img{
+    width: 60vw;
+  }
+  .find-us {
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: vh;
+    text-align: right;
+  }
+
+  .calendario {
+    height: auto;
+    width: 40vw;
+  }
+  .horario {
+    margin: 0 auto;
+    width: 250px;
+    height: 80px;
+  }
 }
