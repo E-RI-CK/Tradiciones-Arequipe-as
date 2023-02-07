@@ -39,9 +39,9 @@
 
   <div id="cabecera" class="cabecera">
     <div class="div_slider">
-      <h3 class="subtitulo">
+      <p class="subtitulo">
         El mejor sabor, legado de La Tradición
-      </h3>
+      </p>
     </div>
     <div class="div_slider dragon">
 
@@ -53,28 +53,39 @@
   </div>
 
   <section id="carta1">
-    <div class="seccarta">
-      <div class="textocarta">
+    <div class="seccarta-principal">
+      <div class="textocarta-principal">
         <p class="studio2">NUESTROS<br>PLATOS</p>
-      </div>
-      <div class="imgdiv">
-        <img class="imgcarta" src="./img/rocoto.png" />
-        <div class="plattext">
-          <h3 class="fonttext">ROCOTO RELLENO</h3>
+        <div class="spicy-img">
+          <figure class="rocoto-img">
+            <img src="img/Mesa de trabajo 47.png" alt="Rocoto">
+          </figure>
+          <figure class="aji-img">
+            <img src="img/Mesa de trabajo 48.png" alt="Aji">
+          </figure>
         </div>
+      </div>
+      <div class="imgdiv-principal">
+        <figure>
+          <img class="img-carta-principal" src="./img/rocoto.png" />
+          <div class="plattext-principal">
+            <p class="fonttext">ROCOTO RELLENO</p>
+            <p class="small-word">CON PASTEL DE PAPA</p>
+          </div>
+        </figure>
       </div>
     </div>
     <div class="seccarta">
       <div class="comida">
         <img class="imgcarta" src="./img/piqueo.png" />
         <div class="plattext">
-          <h3 class="fonttext">piqueo tradición</h3>
+          <p class="font-text-small">piqueo tradición</p>
         </div>
       </div>
       <div class="comida">
         <img class="imgcarta" src="./img/chupe.png" />
         <div class="plattext">
-          <h3 class="fonttext">chupe de camarones</h3>
+          <p class="font-text-small">chupe de camarones</p>
         </div>
       </div>
     </div>
@@ -82,13 +93,13 @@
       <div class="comida">
         <img class="imgcarta" src="./img/chancho.png" />
         <div class="plattext">
-          <h3 class="fonttext">chancho al horno</h3>
+          <p class="font-text-small">chancho al horno</p>
         </div>
       </div>
       <div class="comida">
         <img class="imgcarta" src="./img/doble.png" />
         <div class="plattext">
-          <h3 class="fonttext">doble tradición</h3>
+          <p class="font-text-small">doble tradición</p>
         </div>
       </div>
     </div>
@@ -96,13 +107,13 @@
       <div class="comida">
         <img class="imgcarta" src="./img/triple.png" />
         <div class="plattext">
-          <h3 class="fonttext">triple tradición</h3>
+          <p class="font-text-small">triple tradición</p>
         </div>
       </div>
       <div class="comida">
         <img class="imgcarta" src="./img/costillar.png" />
         <div class="plattext">
-          <h3 class="fonttext">costillar frito</h3>
+          <p class="font-text-small">costillar frito</p>
         </div>
       </div>
     </div>
@@ -116,7 +127,7 @@
             href="https://drive.google.com/file/d/1OXoStxKEew6DXqBAE-fdJqOf8M8vdgE5/view?usp=sharing"> VER CARTA</a>
         </button>
       </div>
-      <div class="imgdiv">
+      <div class="imgdiv-menu">
         <img class="imgcarta" src="./img/carta.png" />
       </div>
     </div>
@@ -124,11 +135,11 @@
 
   <section id="cartanew1">
     <div class="seccarta">
-      <div class="textocarta1">
+      <div class="textocarta1-msr">
         <img class="imgcarta" src="./img/dona.png" />
       </div>
       <div class="imgdiv">
-        <img class="imgcarta" src="./img/donahe.png" />
+        <img class="imgcarta-msr" src="./img/donahe.png" />
       </div>
     </div>
   </section>
@@ -208,16 +219,16 @@
     <div class="seccarta2">
       <div class="textocarta">
         <div class="imgdiv">
-          <img class="imgcarta" src="./img/ubi (1).png" />
+          <img class="img-location" src="./img/ubi (1).png" />
         </div>
         <div class="imgdiv">
           <img class="imgcarta" src="./img/encuentranos.png" />
         </div>
       </div>
       <div class="find-us">
-        <h2 class="textosub text-bold">Av. Dolores 111 - José Luis</h2>
-        <h2 class="textosub">Bustamante y Rivero,</h2>
-        <h2 class="textosub">Arequipa</h2>
+        <p class="textosub text-bold">Av. Dolores 111 - José Luis</p>
+        <p class="textosub">Bustamante y Rivero,</p>
+        <p class="textosub">Arequipa</p>
         <hr style="width: 350px; background:#d85640; margin: 0px; height: 5px; text-align: center;" /> .
       </div>
     </div>
@@ -247,7 +258,7 @@
     </div>
   </section>
 
-  <section id="contacto">
+  <!-- <section id="contacto">
     <div class="seccarta3">
       <div class="textocarta">
         <div class="divtextual">
@@ -270,24 +281,24 @@
               <a target="_blank"
                 href="https://www.google.com/maps/uv?pb=!1s0x91424b5316d6b3d7%3A0xe05fe5c39226e28f!3m1!7e115!4s%2Fmaps%2Fplace%2Flos%2Bnieto%2Bpolleria%2F%40-16.4174561%2C-71.527002%2C3a%2C75y%2C227.98h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sJJ2D08VzvS24w-bKMY-ngA*212e0*214m2*213m1*211s0x91424b5316d6b3d7%3A0xe05fe5c39226e28f%3Fsa%3DX!5slos%20nieto%20polleria%20-%20Buscar%20con%20Google!15sCgIgAQ&imagekey=!1e2!2sJJ2D08VzvS24w-bKMY-ngA&hl=es&sa=X&ved=2ahUKEwjV9db5kab5AhVSBrkGHb__DHoQpx96BAg0EAg"
                 class="contactos"><i class="fa fa-phone icon text"></i>
-                <h2 class="textosub2" style="padding-top:10px ;"> 054 - 426 467</h2>
+                <p class="textosub2" style="padding-top:10px ;"> 054 - 426 467</p>
               </a>
             </div>
             <div class="contactos">
               <a href="#" class="contactos"><i class="fa fa-phone icon text"></i>
-                <h2 class="textosub2" style="padding-top:10px ;">948 765 748</h2>
+                <p class="textosub2" style="padding-top:10px ;">948 765 748</p>
               </a>
             </div>
             <div class="contactos">
               <a href="https://www.facebook.com/LosNietoPolleria" target="_blank" class="contactos"><i
                   class="fa fa-phone icon text"></i>
-                <h2 class="textosub2" style="padding-top:10px ;"> 054 - 399 791</h2>
+                <p class="textosub2" style="padding-top:10px ;"> 054 - 399 791</p>
               </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- <footer>
@@ -296,9 +307,9 @@
         <img src="./img/msg-footer.png" />
       </div>
       <div class="enlaces">
-        <h3 class="subtitulo" style="padding: 15px 5px;">
+        <p class="subtitulo" style="padding: 15px 5px;">
           Enlaces Importantes
-        </h3>
+        </p>
         <ul style="list-style: none;">
           <li style="margin: 5px;">
             <a class="textosub2" href="#pollos">PLATOS</a>
