@@ -43,7 +43,12 @@ if (windowWidth <= 1024) {
       total = $slides.length,
       $next = d.querySelector("#flechaDerecha3"),
       $prev = d.querySelector("#flechaIzquierda3");
-    // console.log($slides, total);
+
+    const setHeroHeight = () => {
+      document.querySelector('#cabecera').style.height = window.innerHeight
+    }
+    window.addEventListener('resize', setHeroHeight)
+    setHeroHeight()
 
     showSlide(1);
     $next.addEventListener("click", (e) => {
