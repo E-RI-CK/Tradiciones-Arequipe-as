@@ -421,7 +421,6 @@ footer {
   /* min-height: 600px; */
   color: #fff;
   width: 100%;
-  height: 110vh;
   flex-direction: column;
   align-items: center;
   align-content: center;
@@ -1490,9 +1489,8 @@ footer a{
     font-size: 5.2vw;
   }
   .cabecera {
-    height: auto;
     background-position: 37% 30%;
-    max-height: 110vh;
+    height: 105vh;
   }
   #cartanew {
     background-image: url(img/cartanew.jpg);
