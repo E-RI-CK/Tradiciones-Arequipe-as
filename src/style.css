@@ -38,7 +38,7 @@ body {
   border-radius: 2% 2% 1.5% 1.5%;
   overflow: hidden;
   width: 70vw;
-  height: 70vh;
+  height: 60vh;
   margin-top: 3rem;
 }
 
@@ -76,9 +76,11 @@ header {
   left: 0;
   z-index: 1000;
 }
+.btn-pidelo a {
+  color: #fff;
+}
 a {
   cursor: pointer;
-  color: #fff;
   text-decoration: none;
 }
 .btn-pidelo {
@@ -924,6 +926,83 @@ footer {
   flex-direction: column;
 }
 
+#contact-section {
+  background-image: url(img/Mesa\ de\ trabajo\ 48-100.jpg);
+  background-size: cover;
+}
+.contact-container {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+.tradi-logo img {
+  height: auto;
+  width: 25vw;
+}
+.tradi-saying-container{
+  padding: 0 5vw;
+}
+.tradi-saying {
+  font-family: var(--font-principal);
+  color:#eadeb9;
+  font-size: 3.5vw;
+}
+.first-column-contact {
+  display: flex;
+  flex-direction: column;
+}
+.second-column-contact{
+  display: flex;
+  flex-direction: column;
+}
+.important-links p{
+  font-family: var(--font-principal);
+  color:#eadeb9;
+  font-size: 3.5vw;
+  text-align: center;
+}
+.tradi-list ul{
+  padding-left: 0;
+  padding:0px
+}
+.tradi-list li a{
+  font-family: "Raleway";
+  color:#eadeb9;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 2.5vh;
+}
+
+.third-column-contact{
+  display: flex;
+  flex-direction: column;
+}
+.telephones{
+  display: flex;
+  flex-direction: column;
+}
+.phones-column a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.phones-column p{
+  text-align: center;
+  color: #eadeb9;
+  padding-left: 2vw;
+  font-size: 3vw;
+  line-height: 1vh;
+}
+.phones-column i{
+  align-self: center;
+  padding-top: 1vh;
+  font-size: 3vw;
+}
+
 @media (max-width: 768px) {
   /*Estilo para el header de todas las páginas en dispositivos móviles*/
   /* body {
@@ -1062,7 +1141,7 @@ footer {
     background-color: #e4be94;
     position: fixed;
     top: 80px;
-    width: 80wv;
+    width: 50vw;
     padding: 20px 0%;
     height: calc(35% - 60px);
     overflow-y: visible;
@@ -1082,7 +1161,7 @@ footer {
   }
   .nav-menu_visible {
     height: auto;
-    left: 20%;
+    left: 50%;
   }
   /*Estilo para el footer de todas las páginas en dispositivos móviles*/
 
@@ -1532,6 +1611,22 @@ footer {
     text-align: center;
     padding: 0 20vw 0 0;
   }
+  .contenedor-combo5 {
+    margin: 20px 35px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    min-width: 21%;
+    min-height: 451px;
+    width: 65vw;
+  }
+  .contenedor-combo5 p {
+    font-size: 4.5vw;
+    text-align: center;
+    max-width: 100%;
+  }
   /* .contenedor-combo5 {
     margin: 20px 16px;
     padding: 30px 30px;
@@ -1540,14 +1635,18 @@ footer {
   /*****Slider****/
   /* .combos .contenedor-combo5{
     display: none;
-  }
+  }*/
   .combos .contenedor-combo5 {
     animation-name: fade;
-    animation-duration: 1.5s;
-}
+    animation-duration: 1s;
+  }
 
-@keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
-} */
+  @keyframes fade {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
