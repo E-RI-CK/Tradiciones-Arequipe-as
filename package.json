@@ -2,7 +2,7 @@
     "name": "los-nieto",
     "version": "1.0.0",
     "description": "Los nieto polleria @gpaola",
-    "main": "src/index.html",
+    "main": "index.html",
     "keywords": [
         "javascript",
         "jest"
