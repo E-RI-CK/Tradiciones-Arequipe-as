@@ -126,6 +126,7 @@ a {
 }
 .btn-pidelo:hover {
   background-color: #f1e4c3;
+  transition: all 0.8s ease-in-out;
 }
 .btn-pidelo:hover a,
 .btn-pidelo:hover i {
@@ -957,7 +958,7 @@ footer {
 
 #contact-section {
   background-image: url(img/Mesa\ de\ trabajo\ 48-100.jpg);
-  background-size: cover;
+  
   max-width: 100vw;
 }
 .contact-container {
