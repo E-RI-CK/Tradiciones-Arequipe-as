@@ -6,6 +6,12 @@
   font-style: normal;
   font-weight: 300;
 }
+@font-face {
+  font-family: "RalewayB";
+  src: url("fonts/raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
 /*****************************/
 :root {
   --font-principal: "Bartender";
@@ -37,8 +43,8 @@ body {
   border: 3px solid #b32e20;
   border-radius: 2% 2% 1.5% 1.5%;
   overflow: hidden;
-  width: 70vw;
-  height: 60vh;
+  width: 65vw;
+  height: 70vh;
   margin-top: 3rem;
 }
 
@@ -78,6 +84,7 @@ header {
 }
 .btn-pidelo a {
   color: #fff;
+  transition: all 0.8s ease-in-out;
 }
 a {
   cursor: pointer;
@@ -88,26 +95,35 @@ a {
   background-color: #b52f22;
   color: #fff;
   border-radius: 45px 45px 45px 45px;
-  padding: 4px 20px;
+  padding: 6px 20px 3px 20px;
   font-size: 2.3vw;
   font-weight: 500;
   border: none;
+  transition: all 0.8s ease-in-out;
+}
+.btn-pidelo i {
+  transition: all 0.8s ease-in-out;
 }
 .btn-pidelo2 {
   font-family: var(--font-principal);
   color: #b52f22;
   background-color: #ebdcbc;
-  border-radius: 15px;
-  padding: 10px;
-  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 10px 2px 10px;
+  font-size: 3vw;
   font-weight: 500;
   border: none;
+  transition: all 1s ease-in-out;
 }
 .btn-pidelo2 a {
   color: #b52f22;
 }
 .btn-pidelo:hover {
-  background-color: #e9b05c;
+  background-color: #f1e4c3;
+}
+.btn-pidelo:hover a,
+.btn-pidelo:hover i {
+  color: #b52f22;
 }
 .btn-slider {
   display: flex;
@@ -143,6 +159,9 @@ a {
 #iconoHeader {
   margin-left: 30px;
   align-self: flex-start;
+  height: auto;
+  width: 18vw;
+  padding-bottom: 3vh;
 }
 .img-carta-principal {
   /* max-width: 250px; */
@@ -225,6 +244,7 @@ i.fab.fa-facebook.text {
   display: block;
   width: 100%;
   background-image: url(img/rocotos.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +252,7 @@ i.fab.fa-facebook.text {
 
 .calendario {
   height: auto;
-  width: 25vw;
+  width: 15vw;
 }
 .horario {
   display: flex;
@@ -243,7 +263,8 @@ i.fab.fa-facebook.text {
 .subtitulo {
   font-family: var(--font-principal);
   font-weight: 400;
-  font-size: 40px;
+  font-size: 5.4vw;
+  padding-top: 10vh;
   padding-left: 20px;
   color: #e4be94;
   text-shadow: 0 0 12px #000, 0 0 15px #daa439;
@@ -265,14 +286,16 @@ i.fab.fa-facebook.text {
   margin: 5px 10px;
   line-height: 60px;
   text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
+  transition: all 1s ease-in-out;
 }
+
 .nav-menu-link {
   padding: 8px 10px;
   border-radius: 10px;
 }
 .nav-menu-link:hover,
 .submenuDirector_items:hover {
-  background-color: #cb9a3a;
+  background-color: #f1e4c3;
   transition: 0.5s;
 }
 .nav-toggle {
@@ -297,7 +320,6 @@ i.fab.fa-facebook.text {
   position: relative;
   padding: auto;
   overflow: hidden;
-  margin-left: 50px;
 }
 .flechaIzquierda,
 .flechaDerecha {
@@ -397,6 +419,7 @@ footer {
   align-content: center;
   flex-wrap: wrap;
 }
+
 #pollos {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -941,63 +964,74 @@ footer {
   height: auto;
   width: 25vw;
 }
-.tradi-saying-container{
+.tradi-saying-container {
   padding: 0 5vw;
 }
 .tradi-saying {
   font-family: var(--font-principal);
-  color:#eadeb9;
+  color: #eadeb9;
   font-size: 3.5vw;
 }
 .first-column-contact {
   display: flex;
   flex-direction: column;
 }
-.second-column-contact{
+.second-column-contact {
   display: flex;
   flex-direction: column;
 }
-.important-links p{
+.important-links p {
   font-family: var(--font-principal);
-  color:#eadeb9;
+  color: #eadeb9;
   font-size: 3.5vw;
   text-align: center;
 }
-.tradi-list ul{
+.tradi-list ul {
   padding-left: 0;
-  padding:0px
+  padding: 0px;
 }
-.tradi-list li a{
+.tradi-list li a {
   font-family: "Raleway";
-  color:#eadeb9;
+  color: #eadeb9;
   text-align: center;
   font-size: 2vw;
   font-weight: 700;
   line-height: 2.5vh;
 }
 
-.third-column-contact{
+.third-column-contact {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
-.telephones{
+.contact-us-img img {
+  height: auto;
+  width: 23vw;
+}
+.contact-us-img {
+  margin-top: -5vh;
+}
+.telephones {
   display: flex;
   flex-direction: column;
+  margin-top: -10vh;
 }
-.phones-column a{
+.phones-column a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.phones-column p{
+.phones-column p {
+  font-family: "Arial";
   text-align: center;
   color: #eadeb9;
   padding-left: 2vw;
-  font-size: 3vw;
+  font-size: 2vw;
   line-height: 1vh;
+  font-weight: 100;
 }
-.phones-column i{
+.phones-column i {
   align-self: center;
   padding-top: 1vh;
   font-size: 3vw;
@@ -1119,10 +1153,10 @@ footer {
     max-height: 100px;
   }
 
-  #iconoHeader {
+  /* #iconoHeader {
     height: 40px;
     width: auto;
-  }
+  } */
   #contenedorCarrusel,
   #contenedorCarrusel2,
   #contenedorCarrusel3 {
@@ -1132,8 +1166,7 @@ footer {
     margin-left: 0;
   }
   .carruselcombos {
-    margin-left: 35px;
-    margin-right: 30px;
+    margin-left: 5vw;
   }
   .nav-menu {
     flex-direction: column;
@@ -1440,7 +1473,7 @@ footer {
   .atencion p {
     padding: 5px;
     text-align: center;
-    font-size: 4.3vw;
+    font-size: 5.2vw;
   }
   .cabecera {
     height: auto;
@@ -1536,7 +1569,7 @@ footer {
     font-size: 5vw;
   }
   .nav-menu {
-    border: 3px ridge #b32e20;
+    /* border: 3px solid #b32e20; */
   }
   .nav-menu-item {
     display: block;
@@ -1552,6 +1585,7 @@ footer {
     background-color: #8e412f;
   }
   .btn-pidelo {
+    display: relative;
     border-radius: 45px 45px 45px 45px;
     padding: 4px 20px;
     font-size: 5vw;
@@ -1559,15 +1593,19 @@ footer {
     border: none;
   }
   .nav-menu {
-    margin: 0 auto;
+    margin: 1vh auto;
     padding: 0;
   }
+.btn-pidelo a{
+  /* display: inline-block; */
+  width: auto;
+}
   .nav-menu-link {
     display: inline-block;
     width: 100%;
   }
   .nav-menu li:hover a {
-    color: #fff;
+    color: #8e412f;
   }
   .nav-menu-link:hover {
     background-color: transparent;
@@ -1640,7 +1678,78 @@ footer {
     animation-name: fade;
     animation-duration: 1s;
   }
+  .combos {
+    justify-content: center;
+    margin-right: 100vw;
+  }
 
+  .contact-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .tradi-logo img {
+    height: auto;
+    width: 70vw;
+  }
+  .tradi-saying-container {
+    padding: 0 5vw;
+  }
+  .tradi-saying-container p {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .important-links p {
+    font-size: 12vw;
+    text-align: center;
+    font-weight: bold;
+  }
+  .tradi-list li a {
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 2.5vh;
+  }
+  .contact-us-img img {
+    height: auto;
+    width: 70vw;
+    margin: 1rem 0 0 4.5vw;
+  }
+  .phones-column p {
+    color: #eadeb9;
+    padding-left: 2vw;
+    font-size: 7vw;
+  }
+  .phones-column i {
+    align-self: center;
+    padding-top: 1vh;
+    font-size: 8vw;
+  }
+  #iconoHeader {
+    /* margin-left: 30px; */
+    height: auto;
+    width: 40vw;
+    margin-left: 0;
+    /* padding-bottom: 3vh; */
+  }
+  .nav-toggle{
+    padding-bottom: 2vh;
+  }
+  .subtitulo {
+    font-size: 14vw;
+    padding-top: 10vh;
+    padding-left: 20px;
+  }
+  .contact-us-img img {
+    height: auto;
+    width: 65vw;
+  }
+  .contact-us-img {
+    margin-top: 0;
+  }
+  .telephones {
+    margin-top: -0;
+  }
   @keyframes fade {
     from {
       opacity: 0.2;
