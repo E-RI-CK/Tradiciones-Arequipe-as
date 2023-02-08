@@ -1088,15 +1088,15 @@ footer {
     width: 280px;
     height: 80px;
   }
-  .cabecera {
-    /* margin-top: -50px; */
+  /* .cabecera {
+    /* margin-top: -50px; 
     display: flex;
     max-width: 100vw;
     flex-direction: column;
     align-content: center;
     align-items: center;
     justify-content: center;
-  }
+  } */
   .studio {
     font-size: 40px;
   }
@@ -1491,7 +1491,7 @@ footer a{
   .cabecera {
     height: auto;
     background-position: 37% 30%;
-    max-height: 100vh;
+    max-height: 110vh;
   }
   #cartanew {
     background-image: url(img/cartanew.jpg);
@@ -1767,6 +1767,10 @@ footer a{
     border-radius: 20px;
     padding: 8px 8px 2px 8px;
     font-size: 7vw;
+  }
+  footer{
+    text-align: center;
+    font-size: 3.2vw;
   }
   @keyframes fade {
     from {
