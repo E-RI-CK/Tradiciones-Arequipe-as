@@ -1490,7 +1490,10 @@ footer a{
   }
   .cabecera {
     background-position: 37% 30%;
-    height: 105vh;
+    height: 100vh; 
+    height: -moz-available;
+    height: -webkit-fill-available;
+    height: fill-available;
   }
   #cartanew {
     background-image: url(img/cartanew.jpg);
