@@ -1786,8 +1786,8 @@ footer a {
     font-size: 3.2vw;
   }
   .heroe-image {
-    height: 670px;
-    min-height: auto;
+    min-height: 100vh;
+    background-attachment: fixed;
   }
   @keyframes fade {
     from {
