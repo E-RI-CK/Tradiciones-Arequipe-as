@@ -183,9 +183,12 @@ a {
   width: 50vw;
   z-index: 0 !important;
 }
+#social-networks {
+  background-image: url(img/Mesa\ de\ trabajo\ 17-100.jpg);
+}
 .studio {
-  font-family: "Trading post NF";
-  font-weight: 800;
+  font-family: var(--font-principal);
+  font-weight: 300;
   font-size: 50px;
   padding: 16px;
   color: #160700;
@@ -212,7 +215,7 @@ a {
 i.fa.fa-phone.icon.text,
 i.fab.fa-instagram-square.text,
 i.fab.fa-facebook.text {
-  color: #b22d20;
+  color: #e4be94;
 }
 
 .textosub {
