@@ -428,7 +428,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* min-height: 110vh; */
+  min-height: 100vh;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -1484,7 +1484,7 @@ footer a {
 @media screen and (max-width: 1023px) {
   #restaurant-location {
     width: 80vw;
-    height: 50vh;
+    height: 65vh;
   }
   #opening-hours {
     width: auto;
@@ -1786,8 +1786,9 @@ footer a {
     font-size: 3.2vw;
   }
   .heroe-image {
-    min-height: 100vh;
-    background-attachment: fixed;
+    transform: scale(1.0224); /*Problem fixed to movil bottom bar*/
+    justify-content: center;
+    max-height: 100vh;
   }
   @keyframes fade {
     from {
