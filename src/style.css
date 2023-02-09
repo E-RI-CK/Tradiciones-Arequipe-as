@@ -1786,7 +1786,6 @@ footer a {
     font-size: 3.2vw;
   }
   .heroe-image {
-    position: fixed;
     height: 800px;
   }
   @keyframes fade {
