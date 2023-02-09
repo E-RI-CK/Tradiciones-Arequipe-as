@@ -12,11 +12,11 @@ navToggle.addEventListener("click", () => {
 
 
 
-// /*****************Slider */
-if (windowWidth <= 1024) {
+// /*****************$carouselContainer */
+if (windowWidth <= 1023) {
   w.addEventListener("load", () => {
     let slide = 1;
-    let $slides = d.querySelectorAll(".combos .contenedor-combo5"),
+    let $slides = d.querySelectorAll(".contenedor-combo5"),
       total = $slides.length,
       $next = d.querySelector("#flechaDerecha3"),
       $prev = d.querySelector("#flechaIzquierda3");
@@ -37,7 +37,6 @@ if (windowWidth <= 1024) {
     $prev.addEventListener("click", (e) => {
       e.preventDefault();
       slide--;
-
       if (slide < 1) { slide = total; }
       showSlide(slide);
     });
@@ -66,3 +65,5 @@ if (windowWidth > 1024) {
     });
   });
 };
+
+

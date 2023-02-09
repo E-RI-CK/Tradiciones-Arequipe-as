@@ -185,6 +185,8 @@ a {
 }
 #social-networks {
   background-image: url(img/Mesa\ de\ trabajo\ 17-100.jpg);
+  padding-top: 4vh;
+  padding-bottom: 4vh;
 }
 .studio {
   font-family: var(--font-principal);
@@ -192,6 +194,7 @@ a {
   font-size: 50px;
   padding: 16px;
   color: #160700;
+  margin: 0;
 }
 .studio2 {
   font-family: var(--font-principal);
@@ -240,7 +243,7 @@ i.fab.fa-facebook.text {
 }
 .textosub2 {
   font-family: "Raleway";
-  font-size: 25px;
+  font-size: 2.5vw;
   color: #f0e3bf;
   /* padding: 2px 10px 2px 10px; */
 }
@@ -332,10 +335,16 @@ i.fab.fa-facebook.text {
 .carruselcombos2,
 #contenedorCarrusel4 {
   display: flex;
-  align-items: center;
-  position: relative;
   padding: auto;
   overflow: hidden;
+}
+#carousel{
+  display: flex;
+  flex-direction: row;
+}
+.carousel-container{
+  display: flex;
+  flex-direction: row;
 }
 .flechaIzquierda,
 .flechaDerecha {
@@ -367,7 +376,7 @@ i.fab.fa-facebook.text {
 #contenedorCarrusel2,
 #contenedorCarrusel3 {
   height: 100%;
-  width: 90%;
+  width: 100%;
   padding: 10px 0;
 }
 #contenedorCarrusel4 {
@@ -387,18 +396,6 @@ i.fab.fa-facebook.text {
   width: 100%;
 }
 /*---------------Hasta acá estoy agregando el estilo para el carrusel -------------------- */
-
-.back-principal {
-  /* padding: 30px;
-  padding-top: 60px;
-  padding-bottom: 40px !important;
-  margin: -20px 0px 0px 0px; */
-  /* background-image: url('img/fondo-primero.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-}
 .secciones {
   display: inline-block;
 }
@@ -478,18 +475,18 @@ footer {
   padding: 40px 10px;
 }
 #especiales {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  /* margin-top: 0px;
+  margin-bottom: 0px; */
   display: flex;
   background-image: url(img/fondo-especiales.jpg);
   justify-content: center;
   background-size: cover;
-  min-height: 500px;
+  /* min-height: 500px; */
   color: #fff;
   width: 100%;
   flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 40px 50px;
 }
 #cartanew {
@@ -629,7 +626,7 @@ footer {
   text-align: center;
   width: 60%;
   font-size: 22px;
-  color: #d79e67;
+  color: #cea675;
 }
 .textdebil2 {
   font-family: "Montserrat", sans-serif;
@@ -640,13 +637,12 @@ footer {
   padding-top: 30px;
 }
 .titulossec2 {
-  margin-bottom: 10px;
-  display: flex;
-  margin-left: 40px;
+  width: 100%;
 }
 .titulossec2 img {
   height: auto;
-  width: 55vw;
+  width: 50vw;
+  /* margin-left: 30vw; */
 }
 
 .combos {
@@ -770,14 +766,13 @@ footer {
   padding-right: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
   padding-bottom: 40px;
   padding-top: 0px;
-  min-width: 21%;
-  min-height: 451px;
+  height: 70vh;
+  /* min-height: 451px; */
 }
 .contenedor-combo6 {
   background-image: radial-gradient(
@@ -963,15 +958,19 @@ footer {
   height: auto;
   width: 50vw;
 }
-.imgdiv {
-  /* text-align: right; */
-}
 .imgdiv-principal {
   position: relative;
 }
 .site-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.site-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #contact-section {
@@ -1174,10 +1173,10 @@ footer {
   .div_slider {
     display: block;
   }
-  .titulossec2 {
+  /* .titulossec2 {
     max-width: 300px;
     max-height: 100px;
-  }
+  } */
 
   /* #iconoHeader {
     height: 40px;
@@ -1601,9 +1600,6 @@ footer a {
     margin: 15px auto;
     font-size: 5vw;
   }
-  .nav-menu {
-    /* border: 3px solid #b32e20; */
-  }
   .nav-menu-item {
     display: block;
     width: 100%;
@@ -1613,9 +1609,6 @@ footer a {
     margin: 0 auto;
     line-height: 60px;
     text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
-  }
-  .btn-pidelo {
-    /* width: 6vw; */
   }
   .nav-menu-item:hover {
     background-color: #8e412f;
@@ -1810,6 +1803,9 @@ footer a {
   }
   .nav a {
     margin-left: 0vw;
+  }
+  #carousel{
+    justify-content: center;
   }
   @keyframes fade {
     from {
