@@ -43,12 +43,10 @@ if (windowWidth <= 1024) {
       total = $slides.length,
       $next = d.querySelector("#flechaDerecha3"),
       $prev = d.querySelector("#flechaIzquierda3");
+/****************************************Delete White Space Movil Devices*/
+    // select the node containing the UI navigation elements for callback function closure
 
-    const setHeroHeight = () => {
-      document.querySelector('#cabecera').style.height = window.innerHeight
-    }
-    window.addEventListener('resize', setHeroHeight)
-    setHeroHeight()
+/********************************************************************** */
 
     showSlide(1);
     $next.addEventListener("click", (e) => {
