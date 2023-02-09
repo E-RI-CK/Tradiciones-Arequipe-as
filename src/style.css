@@ -72,7 +72,7 @@ body {
   width: 100vw;
   /* background: red; */
 }
-.display-none{
+.display-none {
   display: none;
 }
 /**********************************************/
@@ -174,7 +174,7 @@ a {
   align-self: flex-start;
   height: auto;
   width: 18vw;
-  padding-bottom: 3vh;
+  padding-bottom: 0vh;
 }
 .img-carta-principal {
   /* max-width: 250px; */
@@ -276,7 +276,7 @@ i.fab.fa-facebook.text {
 .subtitulo {
   font-family: var(--font-principal);
   font-weight: 400;
-  font-size: 5.4vw;
+  font-size: 5.8vw;
   padding-top: 10vh;
   padding-left: 20px;
   color: #e4be94;
@@ -1612,6 +1612,9 @@ footer a {
     line-height: 60px;
     text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
   }
+  .btn-pidelo {
+    /* width: 6vw; */
+  }
   .nav-menu-item:hover {
     background-color: #8e412f;
   }
@@ -1798,10 +1801,13 @@ footer a {
   .hamburger {
     display: block;
     padding: 0;
-    margin-bottom: 1.5vh;
+    /* margin-bottom: 1.5vh; */
   }
-  .hamburger-box{
+  .hamburger-box {
     fill: #ccc;
+  }
+  .nav a {
+    margin-left: 0vw;
   }
   @keyframes fade {
     from {
