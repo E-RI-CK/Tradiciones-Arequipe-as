@@ -1,5 +1,8 @@
 /**********************Andro's changes**************************/
-
+@font-face {
+  font-family: "AvenirLTStd";
+  src: url(./fonts/AvenirLTStd/AvenirLTStd-Medium.otf);
+}
 @font-face {
   font-family: "Bartender";
   src: url("fonts/Bartender/Bartender.ttf") format("truetype");
@@ -69,7 +72,9 @@ body {
   width: 100vw;
   /* background: red; */
 }
-
+.display-none{
+  display: none;
+}
 /**********************************************/
 /* * {
   box-sizing: border-box;
@@ -1789,6 +1794,14 @@ footer a {
     transform: scale(1.0224); /*Problem fixed to movil bottom bar*/
     justify-content: center;
     max-height: 100vh;
+  }
+  .hamburger {
+    display: block;
+    padding: 0;
+    margin-bottom: 1.5vh;
+  }
+  .hamburger-box{
+    fill: #ccc;
   }
   @keyframes fade {
     from {
