@@ -94,6 +94,18 @@ header {
   left: 0;
   z-index: 1000;
 }
+.animated-line {
+  background-image: linear-gradient(90deg, #eadeb9, #eadeb9, #eadeb9);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 0% 0.2vh;
+  background-position: left bottom;
+  margin-top: 0.6vh;
+  transition: background-size 600ms ease;
+}
+.animated-line:hover{
+  background-size: 100% 0.2vh;
+}
 .btn-pidelo a {
   color: #fff;
   transition: all 0.8s ease-in-out;
@@ -632,7 +644,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   width: 270px;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   color: #aa2f19;
   padding-top: 30px;
 }
@@ -805,10 +817,12 @@ footer {
 }
 .imgcombo {
   margin-top: 10px;
+  height: auto;
+  width: 8vw;
 }
 .imgcombo2 {
-  width: 280px;
-  height: 80px;
+  width: 25vw;
+  height: auto;
 }
 .imgcombo3 {
   margin-top: 20px;
@@ -1700,13 +1714,13 @@ footer a {
     padding-right: 20px; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     /* padding-bottom: 40px; */
     /* padding-top: 0px; */
-    max-height: 80vh;
     width: 70vw;
+    height: 70vh;
     /* height: max-content; */
     overflow-y: hidden;
   }
@@ -1722,7 +1736,7 @@ footer a {
   .combos .contenedor-combo5 {
     animation-name: fade;
     animation-duration: 1s;
-    height: max-content; /*this fixes the vertical slider view */
+    /* height: max-content; this fixes the vertical slider view */
   }
   .combos {
     justify-content: center;
@@ -1824,7 +1838,7 @@ footer a {
   .hamburger-box {
     fill: #ccc;
   }
-  #header-Master{
+  #header-Master {
     height: 10vh;
   }
   .nav a {
@@ -1846,9 +1860,18 @@ footer a {
     flex-direction: column;
     justify-content: center;
   }
-  .site-link a{
+  .site-link a {
     font-size: 5vw;
     line-height: 5vh;
+  }
+  .imgcombo {
+    margin-top: 10px;
+    height: auto;
+    width: 30vw;
+  }
+  .imgcombo2 {
+    width: 65vw;
+    height: auto;
   }
   @keyframes fade {
     from {
