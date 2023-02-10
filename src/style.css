@@ -338,11 +338,11 @@ i.fab.fa-facebook.text {
   padding: auto;
   overflow: hidden;
 }
-#carousel{
+#carousel {
   display: flex;
   flex-direction: row;
 }
-.carousel-container{
+.carousel-container {
   display: flex;
   flex-direction: row;
 }
@@ -967,7 +967,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-.site-link{
+.site-link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -1119,6 +1119,7 @@ footer {
   }
   .combos {
     display: flex;
+    flex-direction: row;
   }
   .imgcombo2 {
     width: 200px;
@@ -1706,6 +1707,7 @@ footer a {
   .combos .contenedor-combo5 {
     animation-name: fade;
     animation-duration: 1s;
+    height: max-content; /*this fixes the vertical slider view */
   }
   .combos {
     justify-content: center;
@@ -1804,8 +1806,25 @@ footer a {
   .nav a {
     margin-left: 0vw;
   }
-  #carousel{
+  #carousel {
     justify-content: center;
+  }
+  .titulossec2 img {
+    width: 90vw;
+    padding-left: 15vw;
+  }
+  .social-networks-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .site-link a{
+    font-size: 5vw;
+    line-height: 5vh;
   }
   @keyframes fade {
     from {
