@@ -44,7 +44,7 @@ if (windowWidth <= 1023) {
     function showSlide(n) {
       n--; // decrement 1
       for (i = 0; i < total; i++) {
-        (i == n) ? $slides[n].style.display = "block" : $slides[i].style.display = "none";
+        (i == n) ? $slides[n].style.display = "flex" : $slides[i].style.display = "none";
       }
     }
   });

@@ -191,7 +191,7 @@ a {
 .studio {
   font-family: var(--font-principal);
   font-weight: 300;
-  font-size: 50px;
+  font-size: 5vw;
   padding: 16px;
   color: #160700;
   margin: 0;
@@ -632,7 +632,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   width: 270px;
-  font-size: 20px;
+  font-size: 1.8vw;
   color: #aa2f19;
   padding-top: 30px;
 }
@@ -761,7 +761,7 @@ footer {
 .contenedor-combo5 {
   background-color: #e4be94;
   margin: 20px 6vw;
-  border-radius: 50px;
+  border-radius: 3vw;
   /*padding-left: 20px;
   padding-right: 20px; */
   display: flex;
@@ -772,7 +772,7 @@ footer {
   /* padding-bottom: 40px; */
   /* padding-top: 0px; */
   height: 60vh;
-  width: 25vw;
+  width: 28vw;
   /* height: max-content; */
   overflow-y: hidden;
 }
@@ -1118,10 +1118,6 @@ footer {
   } */
   .studio {
     font-size: 40px;
-  }
-  .combos {
-    display: flex;
-    flex-direction: row;
   }
   .imgcombo2 {
     width: 200px;
