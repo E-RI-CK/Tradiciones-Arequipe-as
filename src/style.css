@@ -1249,7 +1249,7 @@ footer p {
     top: 80px;
     width: 50vw;
     padding: 20px 0%;
-    height: calc(35% - 60px);
+    /* height: calc(35% - 60px); */
     overflow-y: visible;
     left: 100%;
     transition: left 0.5s;
@@ -1853,7 +1853,7 @@ footer p {
   } */
   footer {
     text-align: center;
-    font-size: 3.7vw;
+    font-size: 3.5vw;
   }
   .heroe-image {
     transform: scale(1.0224); /*Problem fixed to movil bottom bar*/
@@ -1870,10 +1870,12 @@ footer p {
   }
   #header-Master {
     height: 10vh;
+    padding: 0 4vw 0 4vw;
   }
-  .nav a {
-    margin-left: 0vw;
-  }
+ .nav{
+  height: 10vh;
+  justify-content: space-between;
+ }
   #carousel {
     justify-content: center;
   }
