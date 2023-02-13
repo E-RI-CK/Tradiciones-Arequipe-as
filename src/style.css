@@ -656,10 +656,10 @@ footer p {
 .textdebil2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  width: 270px;
+  width: 22vw;
   font-size: 1.6vw;
   color: #aa2f19;
-  padding-top: 30px;
+  padding-top: 5vh;
 }
 .titulossec2 {
   width: 100%;
@@ -786,7 +786,7 @@ footer p {
 .contenedor-combo5 {
   background-color: #e4be94;
   margin: 20px 6vw;
-  border-radius: 20px;
+  border-radius: 2vw;
   /*padding-left: 20px;
   padding-right: 20px; */
   display: flex;
@@ -796,8 +796,9 @@ footer p {
   align-content: center;
   /* padding-bottom: 40px; */
   /* padding-top: 0px; */
-  height: 75vh;
-  width: 28vw;
+  height: auto;
+  min-height: 70vh;
+  width: 26vw;
   /* height: max-content; */
   overflow-y: hidden;
 }
