@@ -85,7 +85,6 @@ body {
 /*Estilo para el header de todas las páginas */
 header {
   background: rgba(233, 215, 177, 0.7);
-  padding-top: 10px;
   /* background: #e5d7b1ac; */
   position: fixed;
   width: 100%;
@@ -103,7 +102,7 @@ header {
   margin-top: 0.6vh;
   transition: background-size 600ms ease;
 }
-.animated-line:hover{
+.animated-line:hover {
   background-size: 100% 0.2vh;
 }
 .btn-pidelo a {
@@ -150,6 +149,9 @@ a {
 .btn-pidelo:hover i {
   color: #b52f22;
 }
+.divtextual {
+  padding-left: 4vw;
+}
 .btn-slider {
   display: flex;
   margin: 30px 10px;
@@ -174,8 +176,7 @@ a {
   align-items: center;
   width: auto;
   /* max-width: 992px; */
-  margin: 0 auto;
-  padding: 0 2rem;
+  height: 15vh;
 }
 .nav-link {
   color: #8e412f;
@@ -183,7 +184,7 @@ a {
 }
 #iconoHeader {
   margin-left: 30px;
-  align-self: flex-start;
+  align-items: center;
   height: auto;
   width: 18vw;
   padding-bottom: 0vh;
@@ -203,7 +204,7 @@ a {
 .studio {
   font-family: var(--font-principal);
   font-weight: 300;
-  font-size: 5vw;
+  font-size: 3.5vw;
   padding: 16px;
   color: #160700;
   margin: 0;
@@ -254,9 +255,12 @@ i.fab.fa-facebook.text {
   color: #b32e20;
 }
 .textosub2 {
-  font-family: "Raleway";
+  font-family: "FontsFree";
+  color: #eadeb9;
+  text-align: center;
   font-size: 2.5vw;
-  color: #f0e3bf;
+  font-weight: 500;
+  line-height: 2.5vh;
   /* padding: 2px 10px 2px 10px; */
 }
 .enlaces {
@@ -303,11 +307,11 @@ i.fab.fa-facebook.text {
 }
 .nav-menu {
   font-family: var(--font-principal);
-  position: static;
+  /* position: static; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* margin-right: 2rem; */
-
+  padding-right: 2vw;
   list-style: none;
   color: #8e412f;
 }
@@ -323,11 +327,11 @@ i.fab.fa-facebook.text {
 .nav-menu-link {
   padding: 8px 10px;
   border-radius: 10px;
+  transition: all 0.7s ease;
 }
 .nav-menu-link:hover,
 .submenuDirector_items:hover {
   background-color: #f1e4c3;
-  transition: 0.5s;
 }
 .nav-toggle {
   color: #fff;
@@ -414,19 +418,20 @@ i.fab.fa-facebook.text {
 /*Estilo para el footer de todas las páginas */
 footer {
   background-image: url(./img/Mesa\ de\ trabajo\ 1-100.jpg);
+  font-family: "FontsFree";
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   flex-direction: column;
 }
-footer p{
+footer p {
   color: #8e412f;
+  font-weight: 100;
 }
-footer a{
-  font-family: "FontsFree";
-  font-weight: 500;
-  color: #8e412f
+.liberte-link{
+  font-weight: bold;
+  color: #8e412f;
 }
 /* Estilo para la cabecera de la Página Principal */
 .cabecera {
@@ -991,12 +996,31 @@ footer a{
   justify-content: space-evenly;
   align-items: center;
 }
-.site-link {
+/* .site-link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+} */
+.site-link a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
+.site-link a i {
+  padding-right: 1vw;
+}
+.animated-line-row {
+  background-image: linear-gradient(90deg, #eadeb9, #eadeb9, #eadeb9);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 0% 0.2vh;
+  background-position: left bottom;
+  transition: background-size 600ms ease;
+}
+.animated-line-row:hover {
+  background-size: 100% 0.2vh;
+}
 #contact-section {
   background-image: url(img/Mesa\ de\ trabajo\ 48-100.jpg);
 
@@ -1038,6 +1062,10 @@ footer a{
 .tradi-list ul {
   padding-left: 0;
   padding: 0px;
+  text-align: center;
+}
+.tradi-list ul li {
+  margin-top: 2.5vh;
 }
 .tradi-list li a {
   font-family: "FontsFree";
@@ -1047,7 +1075,6 @@ footer a{
   font-weight: 500;
   line-height: 2.5vh;
 }
-
 .third-column-contact {
   display: flex;
   flex-direction: column;
