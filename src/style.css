@@ -798,7 +798,7 @@ footer p {
   /* padding-top: 0px; */
   height: auto;
   min-height: 70vh;
-  width: 26vw;
+  width: 25vw;
   /* height: max-content; */
   overflow-y: hidden;
 }
@@ -1735,9 +1735,9 @@ footer p {
     width: 65vw;
   } */
   .contenedor-combo5 p {
-    font-size: 4.5vw;
+    /* font-size: 4.5vw; */
     text-align: center;
-    max-width: 100%;
+    max-width: 87%;
   }
   .contenedor-combo5 {
     /* margin: 20px 6vw; */
@@ -1754,6 +1754,14 @@ footer p {
     height: 70vh;
     /* height: max-content; */
     overflow-y: hidden;
+  }
+  .textdebil2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 4vw;
+    color: #aa2f19;
+    padding-top: 5vh;
+    width: 100%;
   }
   /* .contenedor-combo5 {
     margin: 20px 16px;
