@@ -1009,6 +1009,7 @@ footer p {
 }
 .site-link a i {
   padding-right: 1vw;
+  padding-bottom: 0.5vh;
 }
 .animated-line-row {
   background-image: linear-gradient(90deg, #eadeb9, #eadeb9, #eadeb9);
