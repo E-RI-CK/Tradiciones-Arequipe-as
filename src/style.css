@@ -934,7 +934,7 @@ footer p {
   color: #ab2016;
   font-weight: 300;
   border-radius: 25px;
-  padding: 5px 30px;
+  padding: 1vh 2vw;
   margin: -10px 30px 30px 30px;
   line-height: 0;
 }
@@ -947,7 +947,7 @@ footer p {
   color: #ab2016;
   border-radius: 25px;
   position: 5px 10px;
-  padding: 8px 30px;
+  padding: 3vh 3vw;
   margin: -20% 30px 30px 30px;
   line-height: 0;
 }
@@ -955,7 +955,7 @@ footer p {
   font-family: var(--font-principal);
   font-size: 2vw;
   text-align: center;
-  margin: 30px auto 10px auto;
+  margin: 5vh auto 10px auto;
   color: #8e412f;
 }
 .comida {
@@ -1903,6 +1903,9 @@ footer p {
   .site-link a {
     font-size: 5vw;
     line-height: 5vh;
+  }
+  .textdebil{
+    font-size: 5vw;
   }
   .imgcombo {
     margin-top: 10px;
