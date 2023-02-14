@@ -314,6 +314,7 @@ i.fab.fa-facebook.text {
   padding-right: 2vw;
   list-style: none;
   color: #8e412f;
+  align-items: center;
 }
 .nav-menu-item {
   font-size: 2.3vw;
