@@ -84,7 +84,7 @@ body {
 /* solo para ver el texto hasta que lo acomode */
 /*Estilo para el header de todas las páginas */
 header {
-  background: rgba(233, 215, 177, 0.7);
+  background: rgba(233, 215, 177, 0.7);;
   /* background: #e5d7b1ac; */
   position: fixed;
   width: 100%;
@@ -138,8 +138,8 @@ a {
   border: none;
   transition: all 0.4s ease-in-out;
 }
-.btn-pidelo2:hover{
-  box-shadow: 10px 10px rgba(0,0,0,0.3);
+.btn-pidelo2:hover {
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
 }
 .btn-pidelo2 a {
   color: #b52f22;
@@ -217,7 +217,7 @@ a {
   font-weight: 300;
   font-size: 9vw;
   padding: 0 0 0 10vw;
-  color: #ecdfb8;
+  color: #ba4d3a;
   z-index: 100;
   margin: 10vh 0 0 0;
 }
@@ -433,7 +433,7 @@ footer p {
   color: #8e412f;
   font-weight: 100;
 }
-.liberte-link{
+.liberte-link {
   font-weight: bold;
   color: #8e412f;
 }
@@ -538,7 +538,7 @@ footer p {
 }
 
 #carta1 {
-  background-image: url(img/fondo-carta-test-1.jpg);
+  background-image: url(img/Mesa\ de\ trabajo\ 3-100.jpg);
   background-size: contain;
   justify-content: center;
   /* padding: 0px 30px; */
@@ -934,8 +934,8 @@ footer p {
 }
 .plattext {
   z-index: 100 !important;
-  background-color: #eadeb9;
-  color: #ab2016;
+  background-color: rgba(157, 78, 57, 0.98);
+  color: #f0e4c3;
   font-weight: 300;
   border-radius: 25px;
   padding: 1.5vh 3vw;
@@ -947,8 +947,8 @@ footer p {
   z-index: 100 !important;
   left: 15%;
   width: 30vw;
-  background-color: #eadeb9;
-  color: #ab2016;
+  background-color: rgba(157, 78, 57, 0.98);
+  color: #f0e4c3;
   border-radius: 25px;
   position: 5px 10px;
   padding: 3vh 3vw;
@@ -960,7 +960,7 @@ footer p {
   font-size: 2vw;
   text-align: center;
   margin: 5vh auto 10px auto;
-  color: #8e412f;
+  color: #ddb487;
 }
 .comida {
   display: flex;
@@ -1614,7 +1614,6 @@ footer p {
     font-weight: 300;
     font-size: 7rem;
     padding: 20px;
-    color: #ecdfb8;
     z-index: 100;
   }
   .spicy-img img {
@@ -1885,10 +1884,10 @@ footer p {
     height: 10vh;
     padding: 0 4vw 0 4vw;
   }
- .nav{
-  height: 10vh;
-  justify-content: space-between;
- }
+  .nav {
+    height: 10vh;
+    justify-content: space-between;
+  }
   #carousel {
     justify-content: center;
   }
@@ -1909,7 +1908,7 @@ footer p {
     font-size: 5vw;
     line-height: 5vh;
   }
-  .textdebil{
+  .textdebil {
     font-size: 5vw;
   }
   .imgcombo {

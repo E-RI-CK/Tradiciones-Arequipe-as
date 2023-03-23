@@ -20,10 +20,6 @@ if (windowWidth <= 1023) {
       total = $slides.length,
       $next = d.querySelector("#flechaDerecha3"),
       $prev = d.querySelector("#flechaIzquierda3");
-    /****************************************Delete White Space Movil Devices*/
-    // select the node containing the UI navigation elements for callback function closure
-
-    /********************************************************************** */
 
     showSlide(1);
     $next.addEventListener("click", (e) => {
@@ -58,21 +54,12 @@ if (windowWidth > 1024) {
     const flechaIzq3 = document.querySelector("#flechaIzquierda3");
     const flechaDer3 = document.querySelector("#flechaDerecha3");
     flechaDer3.addEventListener("click", () => {
-      carrusel3.scrollLeft += carrusel3.offsetWidth;
+      carrusel3.scrollLeft += carrusel3.offsetWidth/2.5;
     });
     flechaIzq3.addEventListener("click", () => {
-      carrusel3.scrollLeft -= carrusel3.offsetWidth;
+      carrusel3.scrollLeft -= carrusel3.offsetWidth/2.5;
     });
   });
 };
-
-d.addEventListener("DOMContentLoaded", function () {
-  function reorient(e) {
-    var portrait = (window.orientation % 180 == 0);
-    $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
-  }
-  window.onorientationchange = reorient;
-  window.setTimeout(reorient, 0);
-});
 
 
