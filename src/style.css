@@ -17,8 +17,7 @@
 }
 @font-face {
   font-family: "FontsFree";
-  src: url("fonts/FontsFree/FontsFree-Net-1579-AvenirLTStd-Medium.ttf")
-    format("truetype");
+  src: url("fonts/FontsFree/FontsFree-Net-1579-AvenirLTStd-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
@@ -84,7 +83,7 @@ body {
 /* solo para ver el texto hasta que lo acomode */
 /*Estilo para el header de todas las páginas */
 header {
-  background: rgba(233, 215, 177, 0.7);;
+  background: rgba(233, 215, 177, 0.7);
   /* background: #e5d7b1ac; */
   position: fixed;
   width: 100%;
@@ -346,7 +345,7 @@ i.fab.fa-facebook.text {
   line-height: 50px;
   display: none;
 }
-#work-with-us{
+#work-with-us {
   background-image: url("./img/trabajofondo.png");
   min-height: 100vh;
   padding-top: 15vh;
@@ -354,35 +353,35 @@ i.fab.fa-facebook.text {
   justify-content: center;
   align-items: center;
 }
-.container-work-with-us{
+.container-work-with-us {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.job1 img{
+.job1 img {
   width: 50vw;
 }
-.job2 img{
+.job2 img {
   width: 25vw;
 }
-.second-column{
+.second-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.postulate{
+.postulate {
   display: inline-block;
   text-align: center;
-  margin-top: 2vh!important;
+  margin-top: 2vh !important;
   padding: 1.5vh 3vw !important;
   transition: all 0.7s ease;
-} 
-.postulate:hover{
+}
+.postulate:hover {
   color: rgba(157, 78, 57, 0.98);
   background: #f0e4c3;
 }
-.font-text-small{
+.font-text-small {
   text-align: center;
 }
 /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
@@ -1958,37 +1957,37 @@ footer p {
     width: 65vw;
     height: auto;
   }
-  #work-with-us{
+  #work-with-us {
     display: flex;
     flex-direction: column;
     align-items: stretch;
   }
-  .container-work-with-us{
+  .container-work-with-us {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  .job1 img{
+  .job1 img {
     width: 90vw;
   }
-  .job2 img{
+  .job2 img {
     width: 50vw;
   }
-  .postulate{
+  .postulate {
     display: inline-block;
     text-align: center;
-    margin-top: 2vh!important;
+    margin-top: 2vh !important;
     padding: 1vh 7vw !important;
     transition: all 0.7s ease;
-  } 
-  .second-column{
+  }
+  .second-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
-  .font-text-small{
+  .font-text-small {
     text-align: center;
   }
   @keyframes fade {
