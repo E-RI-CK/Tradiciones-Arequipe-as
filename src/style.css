@@ -346,7 +346,45 @@ i.fab.fa-facebook.text {
   line-height: 50px;
   display: none;
 }
-
+#work-with-us{
+  background-image: url("./img/trabajofondo.png");
+  min-height: 100vh;
+  padding-top: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-work-with-us{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.job1 img{
+  width: 50vw;
+}
+.job2 img{
+  width: 25vw;
+}
+.second-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.postulate{
+  display: inline-block;
+  text-align: center;
+  margin-top: 2vh!important;
+  padding: 1.5vh 3vw !important;
+  transition: all 0.7s ease;
+} 
+.postulate:hover{
+  color: rgba(157, 78, 57, 0.98);
+  background: #f0e4c3;
+}
+.font-text-small{
+  text-align: center;
+}
 /*---------------Desde acá estoy agregando el estilo para el carrusel -------------------- */
 #contenedorCarrusel,
 #contenedorCarrusel2,
@@ -1919,6 +1957,39 @@ footer p {
   .imgcombo2 {
     width: 65vw;
     height: auto;
+  }
+  #work-with-us{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .container-work-with-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .job1 img{
+    width: 90vw;
+  }
+  .job2 img{
+    width: 50vw;
+  }
+  .postulate{
+    display: inline-block;
+    text-align: center;
+    margin-top: 2vh!important;
+    padding: 1vh 7vw !important;
+    transition: all 0.7s ease;
+  } 
+  .second-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .font-text-small{
+    text-align: center;
   }
   @keyframes fade {
     from {
