@@ -381,6 +381,13 @@ i.fab.fa-facebook.text {
   color: rgba(157, 78, 57, 0.98);
   background: #f0e4c3;
 }
+
+.postulate a{
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
 .font-text-small {
   text-align: center;
 }
