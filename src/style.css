@@ -304,7 +304,9 @@ i.fab.fa-facebook.text {
   padding-top: 10vh;
   /* padding-left: 20px; */
   color: #e4be94;
-  text-shadow: 0 0 12px #000, 0 0 15px #daa439;
+  text-shadow:
+    0 0 12px #000,
+    0 0 15px #daa439;
   text-align: center;
 }
 .nav-menu {
@@ -323,7 +325,9 @@ i.fab.fa-facebook.text {
   /* font-weight: 600; */
   margin: 5px 10px;
   line-height: 60px;
-  text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
+  text-shadow:
+    0 0 12px rgb(209, 209, 209),
+    0 0 15px #daa439;
   transition: all 1s ease-in-out;
 }
 
@@ -353,10 +357,20 @@ i.fab.fa-facebook.text {
   justify-content: center;
   align-items: center;
 }
+
+#tc {
+  background-image: url("./img/trabajofondo.png");
+  background-size: cover;
+  min-height: 100vh;
+  padding: 15vh 5vw 3vh 5vw;
+}
+
 .container-work-with-us {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.container-tc {
 }
 .job1 img {
   width: 50vw;
@@ -382,7 +396,7 @@ i.fab.fa-facebook.text {
   background: #f0e4c3;
 }
 
-.postulate a{
+.postulate a {
   text-decoration: none;
   color: inherit;
   outline: none;
@@ -1564,7 +1578,8 @@ footer p {
   -------------------------------------------------------------- */
 @font-face {
   font-family: "Trading post NF";
-  src: url("./fonts/trading/TradingPostNf-0KYo.ttf") format("truetype"),
+  src:
+    url("./fonts/trading/TradingPostNf-0KYo.ttf") format("truetype"),
     url("./fonts/trading/Tradingpostnf-eVvg.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -1699,7 +1714,9 @@ footer p {
     /* font-weight: 600; */
     margin: 0 auto;
     line-height: 60px;
-    text-shadow: 0 0 12px rgb(209, 209, 209), 0 0 15px #daa439;
+    text-shadow:
+      0 0 12px rgb(209, 209, 209),
+      0 0 15px #daa439;
   }
   .nav-menu-item:hover {
     background-color: #8e412f;
